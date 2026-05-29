@@ -3,25 +3,19 @@
   "version": "1.0.0",
   "description": "Script Node.js permettant de générer automatiquement un formulaire Tally à partir d’un fichier CSV et de le pousser via l’API.",
   "main": "push-dunn-to-tally.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node push-dunn-to-tally.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aldopaparazzi/push-dunn-to-tally.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/aldopaparazzi/push-dunn-to-tally/issues"
-  },
-  "homepage": "https://github.com/aldopaparazzi/push-dunn-to-tally#readme",
   "dependencies": {
     "dotenv": "^17.4.2",
-    "node-fetch": "^3.3.2",
+    "node-fetch": "^2.7.0",
     "uuid": "^14.0.0"
-  },
-  "devDependencies": {}
+  }
 }
