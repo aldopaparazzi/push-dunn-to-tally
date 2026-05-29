@@ -113,6 +113,33 @@ function createGlobalCalculatedFields() {
 }
 
 /**
+ * PAGE (2) AVANT LES QUESTIONS
+ */
+blocks.push({
+  uuid: uuidv4(),
+  type: "PAGE_BREAK",
+  groupUuid: uuidv4(),
+  groupType: "PAGE_BREAK",
+  payload: {
+    index: 1,
+    isFirst: false,
+    isLast: false,
+    isQualifiedForThankYouPage: false
+  }
+});
+
+blocks.push({
+  uuid: uuidv4(),
+  type: "TEXT",
+  groupUuid: uuidv4(),
+  groupType: "TEXT",
+  payload: {
+    safeHTMLSchema: textSchema("Cette section va commencer les questions du bilan.")
+  }
+});
+
+
+/**
  * =========================================
  * QUESTION BUILDER 
  * =========================================
