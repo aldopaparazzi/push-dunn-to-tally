@@ -17,11 +17,5 @@
     "dotenv": "^17.4.2",
     "node-fetch": "^2.7.0",
     "uuid": "^14.0.0"
-  },
-  "devDependencies": {},
-  "keywords": [],
-  "bugs": {
-    "url": "https://github.com/aldopaparazzi/push-dunn-to-tally/issues"
-  },
-  "homepage": "https://github.com/aldopaparazzi/push-dunn-to-tally#readme"
+  }
 }

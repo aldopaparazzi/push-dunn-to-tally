@@ -63,9 +63,9 @@ group;id;text
 Exemple :
 
 ```csv
-Auditif;A1;Mon enfant réagit fortement aux bruits soudains
-Auditif;A2;Mon enfant se bouche les oreilles dans les environnements bruyants
-Tactile;T1;Mon enfant évite certaines textures de vêtements
+Auditif;1;Mon enfant réagit fortement aux bruits soudains
+Auditif;2;Mon enfant se bouche les oreilles dans les environnements bruyants
+Tactile;34;Mon enfant évite certaines textures de vêtements
 ```
 
 ---
