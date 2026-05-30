@@ -1,16 +1,24 @@
-import "dotenv/config";
+import { getConfig } from "./config.js";
 import fetch from "node-fetch";
 import { v4 as uuidv4 } from "uuid";
 import fs from "fs";
 
 /**
  * =========================================
- * CONFIG
+ * CONFIG 
  * =========================================
  */
-const FORM_ID = process.env.TALLY_FORM_ID;
-const TOKEN = process.env.TALLY_TOKEN;
+
+const target = (process.argv[2] || "test").toLowerCase();
+
+const {
+  token: TOKEN,
+  formId: FORM_ID,
+  csv: CSV_FILE
+} = getConfig(target);
+
 const API_URL = `https://api.tally.so/forms/${FORM_ID}`;
+
 // =========================================
 // GLOBAL CALCULATED FIELD (shared zero)
 // =========================================
@@ -111,33 +119,6 @@ function createGlobalCalculatedFields() {
     }
   ];
 }
-
-/**
- * PAGE (2) AVANT LES QUESTIONS
- */
-blocks.push({
-  uuid: uuidv4(),
-  type: "PAGE_BREAK",
-  groupUuid: uuidv4(),
-  groupType: "PAGE_BREAK",
-  payload: {
-    index: 1,
-    isFirst: false,
-    isLast: false,
-    isQualifiedForThankYouPage: false
-  }
-});
-
-blocks.push({
-  uuid: uuidv4(),
-  type: "TEXT",
-  groupUuid: uuidv4(),
-  groupType: "TEXT",
-  payload: {
-    safeHTMLSchema: textSchema("Cette section va commencer les questions du bilan.")
-  }
-});
-
 
 /**
  * =========================================
@@ -411,6 +392,34 @@ async function run(csvRows) {
   //zero global
   blocks.push(...createGlobalCalculatedFields());
 
+
+  /**
+   * PAGE (2) AVANT LES QUESTIONS
+   */
+  blocks.push({
+    uuid: uuidv4(),
+    type: "PAGE_BREAK",
+    groupUuid: uuidv4(),
+    groupType: "PAGE_BREAK",
+    payload: {
+      index: 1,
+      isFirst: false,
+      isLast: false,
+      isQualifiedForThankYouPage: false
+    }
+  });
+
+  blocks.push({
+    uuid: uuidv4(),
+    type: "TEXT",
+    groupUuid: uuidv4(),
+    groupType: "TEXT",
+    payload: {
+      safeHTMLSchema: textSchema("Cette section va commencer les questions du bilan.")
+    }
+  });
+
+
   /**
    * QUESTIONS
    */
@@ -476,5 +485,5 @@ async function run(csvRows) {
 /**
  * EXECUTION
  */
-const csvRows = loadCSV("./data.csv");
+const csvRows = loadCSV(CSV_FILE);
 run(csvRows);

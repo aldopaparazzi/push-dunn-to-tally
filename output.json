@@ -1,0 +1,766 @@
+{
+  "id": "QKzLAp",
+  "name": "Bilan sensoriel Enfant",
+  "isNameModifiedByUser": true,
+  "workspaceId": "nP8vD0",
+  "organizationId": "nGkAdp",
+  "status": "PUBLISHED",
+  "hasDraftBlocks": true,
+  "numberOfSubmissions": 3,
+  "createdAt": "2026-05-20T16:01:17Z",
+  "updatedAt": "2026-05-29T20:44:20Z",
+  "index": 0,
+  "isClosed": false,
+  "settings": {
+    "language": "fr",
+    "isClosed": false,
+    "closeMessageTitle": null,
+    "closeMessageDescription": null,
+    "closeTimezone": null,
+    "closeDate": null,
+    "closeTime": null,
+    "submissionsLimit": null,
+    "uniqueSubmissionKey": null,
+    "redirectOnCompletion": null,
+    "hasSelfEmailNotifications": false,
+    "selfEmailTo": null,
+    "selfEmailReplyTo": null,
+    "selfEmailSubject": null,
+    "selfEmailFromName": null,
+    "selfEmailBody": null,
+    "selfEmailSendingDomainId": null,
+    "selfEmailAttachPdf": false,
+    "hasRespondentEmailNotifications": false,
+    "respondentEmailTo": null,
+    "respondentEmailReplyTo": null,
+    "respondentEmailSubject": null,
+    "respondentEmailFromName": null,
+    "respondentEmailBody": null,
+    "respondentEmailSendingDomainId": null,
+    "respondentEmailAttachPdf": false,
+    "hasVerifyEmailNotifications": false,
+    "verifyEmailFromName": null,
+    "verifyEmailSendingDomainId": null,
+    "hasProgressBar": true,
+    "hasPartialSubmissions": false,
+    "pageAutoJump": true,
+    "saveForLater": true,
+    "styles": {
+      "direction": "ltr"
+    },
+    "password": null,
+    "submissionsDataRetentionDuration": null,
+    "submissionsDataRetentionUnit": null,
+    "metaSiteName": null,
+    "metaSiteFaviconUrl": null,
+    "metaTitle": null,
+    "metaDescription": null,
+    "metaImageUrl": null
+  },
+  "blocks": [
+    {
+      "uuid": "dc6a9dcc-c6fe-45e4-91f8-a526c3d82615",
+      "type": "FORM_TITLE",
+      "groupUuid": "e00f24aa-b0de-452b-9a3e-7972db4d851a",
+      "groupType": "TEXT",
+      "payload": {
+        "title": "Bilan sensoriel enfant",
+        "safeHTMLSchema": [
+          [
+            "Bilan sensoriel enfant"
+          ]
+        ],
+        "button": {
+          "label": "Commencer"
+        }
+      }
+    },
+    {
+      "uuid": "88f29063-fdba-4ed4-9e40-1b822ff98e9d",
+      "type": "TEXT",
+      "groupUuid": "e853acd3-9689-486b-b428-5872c3b8f493",
+      "groupType": "TEXT",
+      "payload": {
+        "safeHTMLSchema": [
+          [
+            "Veuillez répondre aux questions suivantes."
+          ]
+        ]
+      }
+    },
+    {
+      "uuid": "097fac9c-a49b-40c8-bdab-7b421a40a664",
+      "type": "PAGE_BREAK",
+      "groupUuid": "a58d492a-795c-41ff-89aa-61ea56adec69",
+      "groupType": "PAGE_BREAK",
+      "payload": {
+        "index": 0,
+        "isFirst": true,
+        "isLast": false,
+        "isQualifiedForThankYouPage": false
+      }
+    },
+    {
+      "uuid": "ea6ced88-c355-48bd-a488-f458e51c4c35",
+      "type": "CALCULATED_FIELDS",
+      "groupUuid": "cf210b39-f62f-4e19-b42c-d1db804258ee",
+      "groupType": "CALCULATED_FIELDS",
+      "payload": {
+        "calculatedFields": [
+          {
+            "uuid": "87059934-54ae-44ef-85d6-4b155c2a2b80",
+            "name": "zero",
+            "type": "NUMBER",
+            "value": 0
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "b4cea0d8-411d-4f6f-b1e1-c655a5fd5d0e",
+      "type": "TITLE",
+      "groupUuid": "80d35675-a748-4d13-a9ea-de66c0f135d7",
+      "groupType": "QUESTION",
+      "payload": {
+        "safeHTMLSchema": [
+          [
+            "1 · Traitement de l'information AUDITIVE"
+          ]
+        ]
+      }
+    },
+    {
+      "uuid": "181d2033-356f-4d07-9f2e-d7c650627448",
+      "type": "TEXT",
+      "groupUuid": "e59e2079-228d-48e8-a85c-31b05a84960d",
+      "groupType": "TEXT",
+      "payload": {
+        "safeHTMLSchema": [
+          [
+            "Réagit vivement au bruit inattendu ou fort. (Par exemple Sirène chien qui aboie sèche cheveux)."
+          ]
+        ]
+      }
+    },
+    {
+      "uuid": "71472fd6-8d99-4d0f-af52-b86a569e03e4",
+      "type": "LINEAR_SCALE",
+      "groupUuid": "b0e327b7-badf-4b45-ab51-1041ded19760",
+      "groupType": "LINEAR_SCALE",
+      "payload": {
+        "isRequired": true,
+        "start": 1,
+        "end": 5,
+        "step": 1,
+        "hasLeftLabel": true,
+        "leftLabel": "Jamais ou presque jamais",
+        "hasCenterLabel": true,
+        "centerLabel": "Parfois",
+        "hasRightLabel": true,
+        "rightLabel": "Toujours ou presque toujours",
+        "name": "1 · Traitement de l'information AUDITIVE",
+        "columnListUuid": "4acb1b6f-7a84-4f6d-81df-10d371e818da",
+        "columnUuid": "c4e7dbce-98be-4702-b901-8ee376df5f7e"
+      }
+    },
+    {
+      "uuid": "c0c53211-1f4f-4f01-8580-24d275c4c4c7",
+      "type": "CHECKBOX",
+      "groupUuid": "b45e76b8-fa64-4944-80b2-0f742c711404",
+      "groupType": "CHECKBOXES",
+      "payload": {
+        "index": 0,
+        "isFirst": true,
+        "isLast": true,
+        "isRequired": false,
+        "hasOtherOption": false,
+        "name": "N/A",
+        "text": "La situation ne peut pas se présenter.",
+        "columnListUuid": "4acb1b6f-7a84-4f6d-81df-10d371e818da",
+        "columnUuid": "483b5bf6-f68b-4c35-bd53-8e0ec07a409e"
+      }
+    },
+    {
+      "uuid": "28a6d073-fa56-4464-8ab6-c6bce1d28df8",
+      "type": "CALCULATED_FIELDS",
+      "groupUuid": "2efcfdff-aaba-49b3-8c82-9cc435fc1a5e",
+      "groupType": "CALCULATED_FIELDS",
+      "payload": {
+        "calculatedFields": [
+          {
+            "uuid": "fa32b621-8d4f-44a0-b497-faf5387d7658",
+            "name": "1",
+            "type": "NUMBER",
+            "value": {
+              "uuid": "b0e327b7-badf-4b45-ab51-1041ded19760",
+              "type": "INPUT_FIELD",
+              "questionType": "LINEAR_SCALE",
+              "blockGroupUuid": "b0e327b7-badf-4b45-ab51-1041ded19760",
+              "title": "1 · Traitement de l'information AUDITIVE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "d4d9b9f3-12d5-43b0-bde9-c2b6081e40f6",
+      "type": "CONDITIONAL_LOGIC",
+      "groupUuid": "73a7df68-2615-49c1-a482-3ab2fe34305b",
+      "groupType": "CONDITIONAL_LOGIC",
+      "payload": {
+        "logicalOperator": "AND",
+        "conditionals": [
+          {
+            "uuid": "f1e5a794-1a7f-4313-a1de-93420cdaa167",
+            "type": "SINGLE",
+            "payload": {
+              "field": {
+                "uuid": "b45e76b8-fa64-4944-80b2-0f742c711404",
+                "type": "INPUT_FIELD",
+                "questionType": "CHECKBOXES",
+                "blockGroupUuid": "b45e76b8-fa64-4944-80b2-0f742c711404",
+                "title": "N/A"
+              },
+              "comparison": "CONTAINS",
+              "value": "c0c53211-1f4f-4f01-8580-24d275c4c4c7"
+            }
+          }
+        ],
+        "actions": [
+          {
+            "uuid": "994966c0-edc7-4f6c-b229-0f3e90ac4c06",
+            "type": "HIDE_BLOCKS",
+            "payload": {
+              "hideBlocks": [
+                "71472fd6-8d99-4d0f-af52-b86a569e03e4"
+              ]
+            }
+          },
+          {
+            "uuid": "1bcee276-7b63-4c19-af4b-8050fb673f2e",
+            "type": "CALCULATE",
+            "payload": {
+              "calculate": {
+                "field": {
+                  "uuid": "fa32b621-8d4f-44a0-b497-faf5387d7658",
+                  "type": "CALCULATED_FIELD",
+                  "questionType": "CALCULATED_FIELDS",
+                  "blockGroupUuid": "2efcfdff-aaba-49b3-8c82-9cc435fc1a5e",
+                  "title": "score"
+                },
+                "operator": "ASSIGNMENT",
+                "value": {
+                  "uuid": "87059934-54ae-44ef-85d6-4b155c2a2b80",
+                  "type": "CALCULATED_FIELD",
+                  "questionType": "CALCULATED_FIELDS",
+                  "blockGroupUuid": "cf210b39-f62f-4e19-b42c-d1db804258ee",
+                  "title": "zero"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "d4f55a31-db3e-4c5a-898b-734bd8d42686",
+      "type": "PAGE_BREAK",
+      "groupUuid": "49557675-ca1c-4823-880c-9faf1c913a03",
+      "groupType": "PAGE_BREAK",
+      "payload": {
+        "index": 1,
+        "isFirst": false,
+        "isLast": false,
+        "isQualifiedForThankYouPage": false
+      }
+    },
+    {
+      "uuid": "d7caf1dc-8d9e-482d-8538-ffa180b7d0c3",
+      "type": "TITLE",
+      "groupUuid": "7f1d76fe-1659-4cb2-b963-1396fa03bde8",
+      "groupType": "QUESTION",
+      "payload": {
+        "safeHTMLSchema": [
+          [
+            "34 · Traitement de l'information relative au MOUVEMENT"
+          ]
+        ]
+      }
+    },
+    {
+      "uuid": "daf1cb0c-cd4d-423e-99de-b43d88f33ed9",
+      "type": "TEXT",
+      "groupUuid": "9116bd19-e4af-46a5-a718-999eb0d57285",
+      "groupType": "TEXT",
+      "payload": {
+        "safeHTMLSchema": [
+          [
+            "Se cogne aux choses ou aux gens, ne remarque pas ce qui se trouve sur son chemin."
+          ]
+        ]
+      }
+    },
+    {
+      "uuid": "0d2d1cf2-a3b0-4481-84db-62bfb3e20626",
+      "type": "LINEAR_SCALE",
+      "groupUuid": "050c50e9-5335-47fc-a9dd-2d6a047b5fe8",
+      "groupType": "LINEAR_SCALE",
+      "payload": {
+        "isRequired": true,
+        "start": 1,
+        "end": 5,
+        "step": 1,
+        "hasLeftLabel": true,
+        "leftLabel": "Jamais ou presque jamais",
+        "hasCenterLabel": true,
+        "centerLabel": "Parfois",
+        "hasRightLabel": true,
+        "rightLabel": "Toujours ou presque toujours",
+        "name": "34 · Traitement de l'information relative au MOUVEMENT",
+        "columnListUuid": "fef3d0d2-59eb-4da3-80b0-f64d3883759f",
+        "columnUuid": "97e383ee-eafb-404a-b9f2-e826b2ef129c"
+      }
+    },
+    {
+      "uuid": "6439373e-5cde-48e9-9191-2724950a2eb5",
+      "type": "CHECKBOX",
+      "groupUuid": "22635ea2-c26e-4dc0-a235-a7a2976828fd",
+      "groupType": "CHECKBOXES",
+      "payload": {
+        "index": 0,
+        "isFirst": true,
+        "isLast": true,
+        "isRequired": false,
+        "hasOtherOption": false,
+        "name": "N/A",
+        "text": "La situation ne peut pas se présenter.",
+        "columnListUuid": "fef3d0d2-59eb-4da3-80b0-f64d3883759f",
+        "columnUuid": "745f2d06-a8b8-4124-a3f4-0539b043a724"
+      }
+    },
+    {
+      "uuid": "0148679a-1da2-4150-b9a5-effd2fcea650",
+      "type": "CALCULATED_FIELDS",
+      "groupUuid": "bbff1699-8aef-484a-a847-76f7c7916f23",
+      "groupType": "CALCULATED_FIELDS",
+      "payload": {
+        "calculatedFields": [
+          {
+            "uuid": "1cac8877-c3b9-44f3-9400-db8e1abfad77",
+            "name": "34",
+            "type": "NUMBER",
+            "value": {
+              "uuid": "050c50e9-5335-47fc-a9dd-2d6a047b5fe8",
+              "type": "INPUT_FIELD",
+              "questionType": "LINEAR_SCALE",
+              "blockGroupUuid": "050c50e9-5335-47fc-a9dd-2d6a047b5fe8",
+              "title": "34 · Traitement de l'information relative au MOUVEMENT"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "5ba69ef6-699e-49c8-b464-f4b2c8e6cede",
+      "type": "CONDITIONAL_LOGIC",
+      "groupUuid": "af59f5be-db17-4d21-aa1c-0077505aaf6c",
+      "groupType": "CONDITIONAL_LOGIC",
+      "payload": {
+        "logicalOperator": "AND",
+        "conditionals": [
+          {
+            "uuid": "0426b402-adc5-4f8b-b920-556297c0ef97",
+            "type": "SINGLE",
+            "payload": {
+              "field": {
+                "uuid": "22635ea2-c26e-4dc0-a235-a7a2976828fd",
+                "type": "INPUT_FIELD",
+                "questionType": "CHECKBOXES",
+                "blockGroupUuid": "22635ea2-c26e-4dc0-a235-a7a2976828fd",
+                "title": "N/A"
+              },
+              "comparison": "CONTAINS",
+              "value": "6439373e-5cde-48e9-9191-2724950a2eb5"
+            }
+          }
+        ],
+        "actions": [
+          {
+            "uuid": "b00a729b-1112-4ab2-b1a2-ff221720d23e",
+            "type": "HIDE_BLOCKS",
+            "payload": {
+              "hideBlocks": [
+                "0d2d1cf2-a3b0-4481-84db-62bfb3e20626"
+              ]
+            }
+          },
+          {
+            "uuid": "726a4006-ca6e-44a3-a2bd-2389f6e15b89",
+            "type": "CALCULATE",
+            "payload": {
+              "calculate": {
+                "field": {
+                  "uuid": "1cac8877-c3b9-44f3-9400-db8e1abfad77",
+                  "type": "CALCULATED_FIELD",
+                  "questionType": "CALCULATED_FIELDS",
+                  "blockGroupUuid": "bbff1699-8aef-484a-a847-76f7c7916f23",
+                  "title": "score"
+                },
+                "operator": "ASSIGNMENT",
+                "value": {
+                  "uuid": "87059934-54ae-44ef-85d6-4b155c2a2b80",
+                  "type": "CALCULATED_FIELD",
+                  "questionType": "CALCULATED_FIELDS",
+                  "blockGroupUuid": "cf210b39-f62f-4e19-b42c-d1db804258ee",
+                  "title": "zero"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "0e180b42-a869-487c-98a8-80a40a6e388c",
+      "type": "PAGE_BREAK",
+      "groupUuid": "42004ee3-2977-48cd-b8ef-bdfca888c541",
+      "groupType": "PAGE_BREAK",
+      "payload": {
+        "index": 2,
+        "isFirst": false,
+        "isLast": false,
+        "isQualifiedForThankYouPage": false
+      }
+    },
+    {
+      "uuid": "3024c50c-872c-42fd-808c-449d451a481a",
+      "type": "TITLE",
+      "groupUuid": "0b48f696-b37c-4b94-8146-c3d3ea1fb021",
+      "groupType": "QUESTION",
+      "payload": {
+        "safeHTMLSchema": [
+          [
+            "85 · Réponses ATTENTIONNELLE relatives au traitement de l'information sensorielle"
+          ]
+        ]
+      }
+    },
+    {
+      "uuid": "408096c6-f983-4abc-a4bf-888a9c7a02d2",
+      "type": "TEXT",
+      "groupUuid": "86e2ce95-26f6-441f-9180-23fdca09241e",
+      "groupType": "TEXT",
+      "payload": {
+        "safeHTMLSchema": [
+          [
+            "Éprouve des difficultés à trouver des objets dans un endroit encombré (par exemple, des chaussures dans une chambre en désordre, un crayon dans un tiroir de « bric-à-brac »)."
+          ]
+        ]
+      }
+    },
+    {
+      "uuid": "23a7c006-16b8-4faa-9518-3903caa543d3",
+      "type": "LINEAR_SCALE",
+      "groupUuid": "68d2d196-395d-40d9-81d4-4e92be43bf4a",
+      "groupType": "LINEAR_SCALE",
+      "payload": {
+        "isRequired": true,
+        "start": 1,
+        "end": 5,
+        "step": 1,
+        "hasLeftLabel": true,
+        "leftLabel": "Jamais ou presque jamais",
+        "hasCenterLabel": true,
+        "centerLabel": "Parfois",
+        "hasRightLabel": true,
+        "rightLabel": "Toujours ou presque toujours",
+        "name": "85 · Réponses ATTENTIONNELLE relatives au traitement de l'information sensorielle",
+        "columnListUuid": "84464b3d-316c-4b90-b17a-88bc6c400261",
+        "columnUuid": "536bd8da-635f-4463-b308-30a5a87b2e68"
+      }
+    },
+    {
+      "uuid": "7e06dd1a-2fb2-4a63-a9aa-4f483605e47f",
+      "type": "CHECKBOX",
+      "groupUuid": "1218d9b2-6cb4-4ccd-bdcd-531f1b9e761a",
+      "groupType": "CHECKBOXES",
+      "payload": {
+        "index": 0,
+        "isFirst": true,
+        "isLast": true,
+        "isRequired": false,
+        "hasOtherOption": false,
+        "name": "N/A",
+        "text": "La situation ne peut pas se présenter.",
+        "columnListUuid": "84464b3d-316c-4b90-b17a-88bc6c400261",
+        "columnUuid": "16a031a3-04c4-4177-836e-3410b93ebd2b"
+      }
+    },
+    {
+      "uuid": "7549fdb7-71f4-4ba8-873f-5f2845e676de",
+      "type": "CALCULATED_FIELDS",
+      "groupUuid": "faaf308b-2a54-44a5-b373-63a929bf05e1",
+      "groupType": "CALCULATED_FIELDS",
+      "payload": {
+        "calculatedFields": [
+          {
+            "uuid": "86d1b034-5578-493b-bfdd-2d5c0f337e49",
+            "name": "85",
+            "type": "NUMBER",
+            "value": {
+              "uuid": "68d2d196-395d-40d9-81d4-4e92be43bf4a",
+              "type": "INPUT_FIELD",
+              "questionType": "LINEAR_SCALE",
+              "blockGroupUuid": "68d2d196-395d-40d9-81d4-4e92be43bf4a",
+              "title": "85 · Réponses ATTENTIONNELLE relatives au traitement de l'information sensorielle"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "509df6b0-3cee-46a9-8250-0da6138bd670",
+      "type": "CONDITIONAL_LOGIC",
+      "groupUuid": "0ec520a3-9a20-47e7-9c26-6501fb759dd6",
+      "groupType": "CONDITIONAL_LOGIC",
+      "payload": {
+        "logicalOperator": "AND",
+        "conditionals": [
+          {
+            "uuid": "31557fa0-6724-4fbe-b852-b2b7938bdd22",
+            "type": "SINGLE",
+            "payload": {
+              "field": {
+                "uuid": "1218d9b2-6cb4-4ccd-bdcd-531f1b9e761a",
+                "type": "INPUT_FIELD",
+                "questionType": "CHECKBOXES",
+                "blockGroupUuid": "1218d9b2-6cb4-4ccd-bdcd-531f1b9e761a",
+                "title": "N/A"
+              },
+              "comparison": "CONTAINS",
+              "value": "7e06dd1a-2fb2-4a63-a9aa-4f483605e47f"
+            }
+          }
+        ],
+        "actions": [
+          {
+            "uuid": "110c006f-7859-4378-9bd6-f84e2219d9db",
+            "type": "HIDE_BLOCKS",
+            "payload": {
+              "hideBlocks": [
+                "23a7c006-16b8-4faa-9518-3903caa543d3"
+              ]
+            }
+          },
+          {
+            "uuid": "493cf86a-011d-4a89-83c9-ec385607cf20",
+            "type": "CALCULATE",
+            "payload": {
+              "calculate": {
+                "field": {
+                  "uuid": "86d1b034-5578-493b-bfdd-2d5c0f337e49",
+                  "type": "CALCULATED_FIELD",
+                  "questionType": "CALCULATED_FIELDS",
+                  "blockGroupUuid": "faaf308b-2a54-44a5-b373-63a929bf05e1",
+                  "title": "score"
+                },
+                "operator": "ASSIGNMENT",
+                "value": {
+                  "uuid": "87059934-54ae-44ef-85d6-4b155c2a2b80",
+                  "type": "CALCULATED_FIELD",
+                  "questionType": "CALCULATED_FIELDS",
+                  "blockGroupUuid": "cf210b39-f62f-4e19-b42c-d1db804258ee",
+                  "title": "zero"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "bec9f655-78ac-41f7-a973-0991f4f542a1",
+      "type": "PAGE_BREAK",
+      "groupUuid": "943ac19c-59b5-4953-b84c-33024601abc5",
+      "groupType": "PAGE_BREAK",
+      "payload": {
+        "index": 3,
+        "isFirst": false,
+        "isLast": false,
+        "isQualifiedForThankYouPage": false
+      }
+    },
+    {
+      "uuid": "ae00f893-487e-4db5-ad19-a0e907c48b22",
+      "type": "TITLE",
+      "groupUuid": "2f4c83bc-6ec4-4b1b-826a-5c9789df63c2",
+      "groupType": "QUESTION",
+      "payload": {
+        "safeHTMLSchema": [
+          [
+            "86 · Réponses ATTENTIONNELLE relatives au traitement de l'information sensorielle"
+          ]
+        ]
+      }
+    },
+    {
+      "uuid": "eb0aa6d7-ac88-458b-a3ec-670fd471158f",
+      "type": "TEXT",
+      "groupUuid": "21490cdd-e927-49e9-a25f-89b2dfb75365",
+      "groupType": "TEXT",
+      "payload": {
+        "safeHTMLSchema": [
+          [
+            "Semble ne pas remarquer des personnes qui entrent dans la pièce."
+          ]
+        ]
+      }
+    },
+    {
+      "uuid": "42de8c03-f0b4-4145-8901-940bb2623ecb",
+      "type": "LINEAR_SCALE",
+      "groupUuid": "e961f29c-410f-4584-b480-c2d30acf06dc",
+      "groupType": "LINEAR_SCALE",
+      "payload": {
+        "isRequired": true,
+        "start": 1,
+        "end": 5,
+        "step": 1,
+        "hasLeftLabel": true,
+        "leftLabel": "Jamais ou presque jamais",
+        "hasCenterLabel": true,
+        "centerLabel": "Parfois",
+        "hasRightLabel": true,
+        "rightLabel": "Toujours ou presque toujours",
+        "name": "86 · Réponses ATTENTIONNELLE relatives au traitement de l'information sensorielle",
+        "columnListUuid": "40aeb8ff-05ef-4520-a2d0-fe38468b4cfc",
+        "columnUuid": "7bb85562-fc63-44e6-9e0e-6fd840e4790a"
+      }
+    },
+    {
+      "uuid": "7c4e950a-de58-4716-99ff-576a18c9546b",
+      "type": "CHECKBOX",
+      "groupUuid": "2cdfafbf-b49e-4430-a741-d9a5c0998b52",
+      "groupType": "CHECKBOXES",
+      "payload": {
+        "index": 0,
+        "isFirst": true,
+        "isLast": true,
+        "isRequired": false,
+        "hasOtherOption": false,
+        "name": "N/A",
+        "text": "La situation ne peut pas se présenter.",
+        "columnListUuid": "40aeb8ff-05ef-4520-a2d0-fe38468b4cfc",
+        "columnUuid": "271158c7-f8fe-4b66-b002-2dd5e6f8b69e"
+      }
+    },
+    {
+      "uuid": "1512d2cc-d9af-42c9-9156-672d4dba9f67",
+      "type": "CALCULATED_FIELDS",
+      "groupUuid": "7b69bcfc-1102-453a-91f9-7299c1662359",
+      "groupType": "CALCULATED_FIELDS",
+      "payload": {
+        "calculatedFields": [
+          {
+            "uuid": "f9497fdc-5fde-484a-bbcf-c2f301782058",
+            "name": "86",
+            "type": "NUMBER",
+            "value": {
+              "uuid": "e961f29c-410f-4584-b480-c2d30acf06dc",
+              "type": "INPUT_FIELD",
+              "questionType": "LINEAR_SCALE",
+              "blockGroupUuid": "e961f29c-410f-4584-b480-c2d30acf06dc",
+              "title": "86 · Réponses ATTENTIONNELLE relatives au traitement de l'information sensorielle"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "920248f1-611c-4d84-a1b4-b3a783ec13ff",
+      "type": "CONDITIONAL_LOGIC",
+      "groupUuid": "2692a892-0250-4a84-9343-993c18603c68",
+      "groupType": "CONDITIONAL_LOGIC",
+      "payload": {
+        "logicalOperator": "AND",
+        "conditionals": [
+          {
+            "uuid": "c7b3e2bd-64bd-4566-8135-10db073c5918",
+            "type": "SINGLE",
+            "payload": {
+              "field": {
+                "uuid": "2cdfafbf-b49e-4430-a741-d9a5c0998b52",
+                "type": "INPUT_FIELD",
+                "questionType": "CHECKBOXES",
+                "blockGroupUuid": "2cdfafbf-b49e-4430-a741-d9a5c0998b52",
+                "title": "N/A"
+              },
+              "comparison": "CONTAINS",
+              "value": "7c4e950a-de58-4716-99ff-576a18c9546b"
+            }
+          }
+        ],
+        "actions": [
+          {
+            "uuid": "5c06a075-cae9-4f3a-bf50-8e52b7c1b183",
+            "type": "HIDE_BLOCKS",
+            "payload": {
+              "hideBlocks": [
+                "42de8c03-f0b4-4145-8901-940bb2623ecb"
+              ]
+            }
+          },
+          {
+            "uuid": "990c599e-1ab0-415c-bfc7-ce60e136cf95",
+            "type": "CALCULATE",
+            "payload": {
+              "calculate": {
+                "field": {
+                  "uuid": "f9497fdc-5fde-484a-bbcf-c2f301782058",
+                  "type": "CALCULATED_FIELD",
+                  "questionType": "CALCULATED_FIELDS",
+                  "blockGroupUuid": "7b69bcfc-1102-453a-91f9-7299c1662359",
+                  "title": "score"
+                },
+                "operator": "ASSIGNMENT",
+                "value": {
+                  "uuid": "87059934-54ae-44ef-85d6-4b155c2a2b80",
+                  "type": "CALCULATED_FIELD",
+                  "questionType": "CALCULATED_FIELDS",
+                  "blockGroupUuid": "cf210b39-f62f-4e19-b42c-d1db804258ee",
+                  "title": "zero"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "9aefb458-835a-4045-834d-2b6182dd4902",
+      "type": "PAGE_BREAK",
+      "groupUuid": "6a18cbb9-0ebd-4536-9ca6-53698ec87894",
+      "groupType": "PAGE_BREAK",
+      "payload": {
+        "index": 5,
+        "isFirst": false,
+        "isLast": true,
+        "isQualifiedForThankYouPage": true,
+        "isThankYouPage": true
+      }
+    },
+    {
+      "uuid": "a75f8741-ec11-48d3-adbb-d10bc10f9f61",
+      "type": "TEXT",
+      "groupUuid": "191a929b-1101-4b12-a82d-21a44aa666e9",
+      "groupType": "TEXT",
+      "payload": {
+        "safeHTMLSchema": [
+          [
+            "Merci pour votre participation."
+          ]
+        ]
+      }
+    }
+  ]
+}

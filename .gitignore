@@ -1,3 +1,6 @@
+# security file
+token.ps1
+
 # Dependencies
 node_modules/
 
