@@ -1,5 +1,7 @@
-import fs from "fs";
 import readline from "readline";
+import { execSync } from "child_process";
+
+const TOKEN_KEY = "TALLY_TOKEN";
 
 function ask(question) {
   const rl = readline.createInterface({
@@ -15,16 +17,57 @@ function ask(question) {
   );
 }
 
+function getPersistentToken() {
+  try {
+    return execSync(
+      `powershell -Command "[Environment]::GetEnvironmentVariable('${TOKEN_KEY}', 'User')"`
+    )
+      .toString()
+      .trim();
+  } catch {
+    return null;
+  }
+}
+
+function setPersistentToken(token) {
+  execSync(
+    `powershell -Command "[Environment]::SetEnvironmentVariable('${TOKEN_KEY}', '${token}', 'User')"`
+  );
+}
+
+function deletePersistentToken() {
+  execSync(
+    `powershell -Command "[Environment]::SetEnvironmentVariable('${TOKEN_KEY}', $null, 'User')"`
+  );
+}
+
 async function main() {
   let token = process.env.TALLY_TOKEN;
+  let source = "session";
 
   // ---------------------------------
-  // GET TOKEN
+  // CHECK SESSION TOKEN
+  // ---------------------------------
+  if (token) {
+    console.log(`🔑 Token détecté (SESSION)`);
+  }
+
+  // ---------------------------------
+  // CHECK PERSISTENT TOKEN
+  // ---------------------------------
+  const persistent = getPersistentToken();
+
+  if (!token && persistent) {
+    token = persistent;
+    source = "persistant";
+    console.log(`🔑 Token détecté (PERSISTANT USER)`);
+  }
+
+  // ---------------------------------
+  // NO TOKEN
   // ---------------------------------
   if (!token) {
     token = await ask("🔑 TALLY_TOKEN : ");
-  } else {
-    console.log(`🔑 Token déjà détecté`);
   }
 
   if (!token) {
@@ -32,36 +75,47 @@ async function main() {
     return;
   }
 
-  // ---------------------------------
-  // MODE CHOIX
-  // ---------------------------------
-  const remember = await ask(
-    "💾 Retenir le token ? (y = persistant / n = session seulement) : "
-  );
+  console.log(`\n📦 Token actif (source: ${source})`);
 
   // ---------------------------------
-  // SESSION ONLY
+  // IF PERSISTENT EXISTS → OPTION DELETE
   // ---------------------------------
-  if (remember.toLowerCase() !== "y") {
-    process.env.TALLY_TOKEN = token;
+  if (persistent) {
+    const action = await ask(
+      "⚠️ Token persistant détecté : [d] supprimer / [c] conserver / [r] remplacer : "
+    );
 
-    console.log("\n⚡ Token défini pour cette session uniquement");
-    console.log("👉 node push-dunn-to-tally.js");
+    if (action.toLowerCase() === "d") {
+      deletePersistentToken();
+      console.log("🗑️ Token persistant supprimé");
+      return;
+    }
+
+    if (action.toLowerCase() === "r") {
+      setPersistentToken(token);
+      console.log("♻️ Token persistant remplacé");
+      return;
+    }
+
+    console.log("✔️ Token conservé");
     return;
   }
 
   // ---------------------------------
-  // PERSISTENT USER ENV (Windows)
+  // ASK PERSISTENCE
   // ---------------------------------
-  const { execSync } = await import("child_process");
-
-  execSync(
-    `powershell -Command "[Environment]::SetEnvironmentVariable('TALLY_TOKEN', '${token}', 'User')"`,
-    { stdio: "inherit" }
+  const remember = await ask(
+    "💾 Retenir le token ? (y = persistant / n = session) : "
   );
 
-  console.log("\n💾 Token sauvegardé (persistant utilisateur)");
-  console.log("👉 Redémarre ton terminal pour l'utiliser");
+  if (remember.toLowerCase() === "y") {
+    setPersistentToken(token);
+    console.log("💾 Token sauvegardé (User persistant)");
+    console.log("👉 Redémarre ton terminal");
+  } else {
+    process.env.TALLY_TOKEN = token;
+    console.log("⚡ Token défini pour cette session uniquement");
+  }
 }
 
 main();
